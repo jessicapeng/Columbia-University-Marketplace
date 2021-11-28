@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+<style>
+        
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 10%; 
+    background-color: #EBF3F8;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+
+  .cta {
+    padding: 7px 40px;
+    background-color:rgba(183, 211, 227, 0.86);
+    border: 2px solid #2C5A7C;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color:#2C5A7C;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .logo {
+      margin-top: 5px;
+      text-decoration: none;
+      color: 3A7CA5;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  a:hover {
+    color: rgba(0, 136, 169, 1);
+  }
+
+
+  body {
+      background-color: #81C3D7;
+      overflow: hidden;
+  }
+
+  .right {
+      float: right
+  }
+  
+  .sell {
+      text-decoration: underline;
+      color: #2C5A7C;
+  }
+
+  .font {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .notifs {
+      padding-left: 30px;
+      margin-bottom: 10px;
+  }
+
+  .menu {
+      width: 18%;
+      float: left;
+      height: calc(100vh - 3em);
+      background-color: #EBF3F8;
+  }
+
+  .listings {
+      width: 82%; 
+      height: calc(100vh - 3em);
+      float: right;
+      padding: 6em 8em; 
+  }
+
+  .category {
+      color: #5C6D7D;
+      font-weight: 500;
+      font-size: 20px; 
+      padding-left: 50px; 
+      margin-bottom: 10px;
+  }
+
+  .item {
+    color: rgba(92,109,125, 0.6);
+    font-weight: 400;
+    font-size: 16px; 
+    padding-left: 50px; 
+    margin-bottom: 3px;
+  }
+
+  #selected {
+      border-left: 6px solid #5C6D7D;
+      padding-left: 44px;
+      color: #5C6D7D;
+  }
+
+  .top-bar {
+    color: #EBF3F8;
+    margin-bottom: 20px; 
+  }
+
+  .subtitle {
+      font-size: 25px; 
+      font-weight: 500; 
+  }
+
+  .subcat {
+      font-size: 16px; 
+      text-decoration: underline;
+      font-weight: 400; 
+  }
+
+  .filter {
+      float: right; 
+      border: none;
+      outline: none;
+      border-radius: 20px; 
+      padding: 2px 20px 2px 20px; 
+  }
+
+  .items {
+      display: flex; 
+      flex-direction: row; 
+      height: 100vh; 
+      flex-wrap: wrap;
+  }
+
+  .card {
+      height: 280px; 
+      width: 220px; 
+      background-color: rgba(235, 243, 248, 0.8);
+      border-radius: 20px; 
+      text-align: center; 
+      padding: 20px; 
+      color: #16425B;
+      position: relative;
+  }
+
+  .item-name {
+      font-weight: 500;
+      font-size: 20px;
+  }
+
+  .item-desc {
+      font-weight: 400; 
+      font-size: 12px; 
+      line-height: 15px;
+  }
+
+  .contact {
+      background-color: rgba(129, 195, 215, 0.86);
+      border-radius: 20px; 
+      color: #2C5A7C;
+      font-size: 16px; 
+      border: none;
+      padding: 5px; 
+      font-weight: 500;
+      position: absolute; 
+      bottom: 15; 
+      width: 80%; 
+  }
+
+</style>
+    <header>
+        <a class="logo" href="index.html"><h5>CU Marketplace</h5></a>
+        <div class = "right">
+
+            <a href="chat.html"><img class="notifs" src="media/message.svg"/></a>
+
+            <a class = "sell font" href="goodlisting.html">Sell something</a>
+
+            <a href="profile.html" class="cta">Jane</a>
+        </div>
+    </header>
+    <body>
+        <div class="menu">
+            <div style="padding-top: 3em;" class="category">
+                GOODS
+            </div>
+            <a href="goods.html">
+                <div class="item">Clothes</div>
+            </a> 
+            <div class="item">Furniture</div>
+            <div class="item">Electronics</div>
+            <div class="item">Books</div>
+            <div class="item">Accessories</div>
+            <div class="item">Stationery</div>
+            <div style="padding-bottom: 10px;" class="item">Other</div>
+
+            <div class="category">
+                SERVICES
+            </div>
+            <div class="item" id="selected">Tutoring</div>
+            <div class="item">Music</div>
+            <div class="item">Tech</div>
+            <div style="padding-bottom: 10px;" class="item">Others</div>
+
+            <div class="category">
+                HOUSING
+            </div>
+            <div class="item">Rent</div>
+            <div class="item">Sublet</div>
+            <div style="padding-bottom: 10px;" class="item">Roommate</div>
+        </div>
+        <div class="listings">
+            <div class="top-bar">
+                <img style="padding-right: 10px; float: left;" src="media/white_service.svg" />
+                <span style="padding-right: 10px;" class="subtitle">Tutoring</span>
+                <input class="filter" placeholder="Filter keywords" />
+            </div>
+            <div class="items">
+                <div style="margin-right: calc((100% - 660px) / 2);" class="card">
+                    <div class="item-name">Rachel Zhang</div>
+                    <div style="font-size: 10px; padding-bottom: 5px;">4.9/5</div>
+                    <div style="font-size: 13px; font-weight: 400; line-height: 15px;">
+                        SEAS 2021 <br />
+                        Applied Math
+                    </div> <br /> 
+                    <div class="item-desc">
+                        <b>Subjects:</b> APMA 2000, APMA 3101, APMA 4200, PHYS 1401, PHYS 1402, COMS 1004 <br /><br />
+                        <b>When:</b> T/Th 6-8pm, M/W 8:30-11pm  
+                    </div>
+                    <button class="contact">Contact Tutor</button>
+                </div>
+                <div class="card">
+                    <div class="item-name">David Winitch</div>
+                    <div style="font-size: 10px; padding-bottom: 5px;">4.8/5</div>
+                    <div style="font-size: 13px; font-weight: 400; line-height: 15px;">
+                        CC 2021 <br />
+                        Chemistry
+                    </div> <br /> 
+                    <div class="item-desc">
+                        <b>Subjects:</b> CHEM 1201, CHEM 1201, MATH 2202, BIO 1004 <br /><br />
+                        <b>When:</b> Sat/Sun 1:30-4pm
+                    </div>
+                    <button class="contact">Contact Tutor</button>
+                </div>
+                <div style="margin-left: calc((100% - 660px) / 2);" class="card">
+                    <div class="item-name">Henry Aviles</div>
+                    <div style="font-size: 10px; padding-bottom: 5px;">4.6/5</div>
+                    <div style="font-size: 13px; font-weight: 400; line-height: 15px;">
+                        GS 2022 <br />
+                        Political Science
+                    </div> <br /> 
+                    <div class="item-desc">
+                        <b>Subjects:</b> POLS 2000, POLS 3560, POLS 3700, HUMA 1002, HUMA 1001 <br /><br />
+                        <b>When:</b> M 7-11pm, Th 2-4pm
+                    </div>
+                    <button class="contact">Contact Tutor</button>
+                </div>
+                
+                <div style="margin-right: calc((100% - 660px) / 2); margin-top: -8em;" class="card">
+                    <div class="item-name">Anushka Shah</div>
+                    <div style="font-size: 10px; padding-bottom: 5px;">4.6/5</div>
+                    <div style="font-size: 13px; font-weight: 400; line-height: 15px;">
+                        Barnard 2023 <br />
+                        Economics
+                    </div> <br /> 
+                    <div class="item-desc">
+                        <b>Subjects:</b> ECON 1100, ECON 2340, MATH 3101, ECON 2101<br /><br />
+                        <b>When:</b> T 5-6pm, F 2-4pm
+                    </div>
+                    <button class="contact">Contact Tutor</button>
+                </div>
+                <div style="margin-top: -8em;" class="card">
+                    <div class="item-name">Elizabeth Tyler</div>
+                    <div style="font-size: 10px; padding-bottom: 5px;">4.5/5</div>
+                    <div style="font-size: 13px; font-weight: 400; line-height: 15px;">
+                        SEAS 2024 <br />
+                        Mechanical Engineering
+                    </div> <br /> 
+                    <div class="item-desc">
+                        <b>Subjects:</b> APMA 2450, MATH 3101, COMS 1004, ENG 1006<br /><br />
+                        <b>When:</b> M/W 5:30-8pm
+                    </div>
+                    <button class="contact">Contact Tutor</button>
+                </div>
+                <div style="margin-left: calc((100% - 660px) / 2); margin-top: -8em;" class="card">
+                    <div class="item-name">Varun Gupta</div>
+                    <div style="font-size: 10px; padding-bottom: 5px;">4.3/5</div>
+                    <div style="font-size: 13px; font-weight: 400; line-height: 15px;">
+                        CC 2022 <br />
+                        Physics
+                    </div> <br /> 
+                    <div class="item-desc">
+                        <b>Subjects:</b> PHYS 1401, PHYS 1402, COMS 1004, PHYS 3200<br /><br />
+                        <b>When:</b> T/Th/F 4-7pm
+                    </div>
+                    <button class="contact">Contact Tutor</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
