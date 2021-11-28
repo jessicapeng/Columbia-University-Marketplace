@@ -1,7 +1,7 @@
 # CUMarketplace
 
 ### Instructions to run our program:
-Our homepage is in the ‘index.html’ file at the root directory of our project. To view, simply double-click the file or drag it into your browser. 
+Our homepage is in the `index.html` file at the root directory of our project. To view, simply double-click the file.
 
 ### Target User Population 
 The target user population is Columbia students who would like to buy/sell secondhand items like books, clothes, furniture and stationery or hire/provide different services such as tutoring of specific classes, photography, etc or rent/sublease apartments. This doesn't differ from us, as we too buy/sell secondhand items or services and rent/sublease apartments.
