@@ -1,4 +1,4 @@
-# CUMarketplace
+# Columbia University Marketplace
 
 ### Instructions to run our program:
 Our homepage is in the `index.html` file at the root directory of our project. To view, simply double-click the file.
